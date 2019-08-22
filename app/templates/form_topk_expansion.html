@@ -1,0 +1,40 @@
+<style>
+div.centering
+{
+margin: 0 auto;
+margin-left: auto;
+margin-right: auto;
+text-align:center;
+}
+</style>
+
+<div class="centering">
+<img src="https://lautorite.qc.ca/typo3conf/ext/amf_site_lautorite/Resources/Public/Assets/img/logo-amf-header.png" alt="amf">
+<h1>
+  <span style="color: blue;"> Search System </span>
+</h1>
+</div>
+
+
+<form method="POST">
+    <div class="centering">
+        <input type="submit" name="action" value="init">
+        <p>
+            {{ query_text }}
+        </p>
+        <p>
+            Please select candidate expansion terms:
+            <select id="exp" name = "exp_term">
+              {% for term in all_exp_terms %}
+                <option value="{{term}}:{{all_exp_terms[term]}}" SELECTED>{{term}} : {{all_exp_terms[term]}}</option>"
+              {% endfor %}
+            </select>
+            <input type="submit" name="action" value="add">
+        </p>
+        <p>
+            The expanded query will be:
+            {{ expanded_query }}
+            <input type="submit" name="action" value="search">
+        </p>
+    </div>
+</form>

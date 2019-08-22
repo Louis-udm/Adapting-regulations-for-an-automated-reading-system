@@ -1,0 +1,43 @@
+<style>
+div.centering
+{
+margin: 0 auto;
+margin-left: auto;
+margin-right: auto;
+text-align:center;
+}
+</style>
+
+<div class="centering">
+<img src="https://lautorite.qc.ca/typo3conf/ext/amf_site_lautorite/Resources/Public/Assets/img/logo-amf-header.png" alt="amf">
+<h1>
+  <span style="color: blue;"> Welcome to AMF's Legal Search System </span>
+</h1>
+</div>
+
+<div class="centering">
+Please select one of your interested roles
+<form method="POST">
+  <p>
+    <select id="role1" name ="role">
+      <option value="all">All</option>
+      <option value='insurance representative'>Insurance representatives</option>
+      <option value='representative in insurance of person'>Representative in insurance of person</option>
+      <option value='group insurance representative'>Group insurance representative</option>
+      <option value='damage insurance agent'>Damage insurance agent</option>
+      <option value='damage insurance broker'>Damage insurance broker</option>
+      <option value='claims adjuster'>Claims adjuster</option>
+      <option value='financial planner'>Financial planner</option>
+      <option value='firm'>Firm</option>
+      <option value='independent representative'>Independent representative</option>
+      <option value='independent partnership'>independent partnership</option>
+
+    </select>
+  </p>
+  <p>
+      With query expansion
+      <input type="checkbox" name="query_expansion" value="qe">
+  </p>
+    <input type="submit" value="Select">
+</form>
+</div>
