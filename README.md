@@ -20,12 +20,40 @@ http://www.finra.org/industry/special-notice-073018
 
 https://www.finextra.com/pressarticle/70869/corlytics-helps-create-intelligent-rule-book-for-fca
 
-
 ## Guid
+
 ### Requirements
 - python 3.x
 - spaCY 2.1
 - indri lemur 5.15
 
-### Match the scope of applicability for regulations
+### Usage
+
+0. Prerequisites: Indri, python3 (with json, pickle, flask)
+1. (if not installed) Install indri open source search engine: https://sourceforge.net/projects/lemur/files/lemur/indri-5.3/
+    or use pre-compiled linux binaries included in indri/bin/
+
+2. Run tools/convert_to_trec.py to convert the docx, pkls files into trec text format in order to let indri build the index
+    ```python
+    cd tools/
+    python convert_to_trec.py --baseinpath path_to_father_folder_of_docx/pkl_fils
+    --outpath path_to_the_generated_trec_text_file
+    ```
+
+3. Build paragraph index by indri.
+``` 
+cd indri/bin/
+./IndriBuildIndex indriparam.txt
+```
+where indriparam.txt is a pre-defined indexing paramter file, an example is provided in tools/indexparam.txt
+indri website has detailed usage: https://sourceforge.net/p/lemur/wiki/IndriBuildIndex%20Parameters/
+
+4. Classify scope of applicability for regulations:
 ***train_scope_label.py*** is for this purpose. We use the rule match functions of [*spaCY*](https://spacy.io/api/matcher). If the child section doesn't match a scope role, it will inherit the role of the parent chapter. Just run *python train_scope_label.py* will produce the labeled documents and dump to *pickle* files.
+
+5.  Run web service (the app/ folder contains the backend codes, and app/templates contains webpages)
+```
+export FLASK_APP=service.py
+flask run --port=8888 (or your desired port)
+```
+6. Launch the website: in your browser type: localhost:8888/index and return
