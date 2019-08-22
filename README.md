@@ -4,7 +4,7 @@
 # Adapting-regulations-for-an-automated-reading-system
 > submitted by the Autorité des Marchés Financiers
 
-> Jian-Yun Nie (Université de Montréal) Z-350 Presentation Work summary
+> Jian-Yun Nie and Zhibin Lu and Pan Du and Yifan Nie (RALI of Université de Montréal)
 
 The mandate of the Autorité des Marchés Financiers (AMF) is to develop and monitor the application of financial sector regulations for Québec companies and foreign companies offering their financial products in Québec. These regulations are available on the AMF web site. As an example, here are the regulations for securities.
 
