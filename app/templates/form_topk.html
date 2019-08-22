@@ -1,0 +1,32 @@
+<style>
+div.centering
+{
+margin: 0 auto;
+margin-left: auto;
+margin-right: auto;
+text-align:center;
+}
+</style>
+
+<div class="centering">
+<img src="https://lautorite.qc.ca/typo3conf/ext/amf_site_lautorite/Resources/Public/Assets/img/logo-amf-header.png" alt="amf">
+<h1>
+  <span style="color: blue;"> Search </span>
+</h1>
+</div>
+
+<div class="centering">
+<form method="POST">
+  <p> <h4>Please input your query: </h4>
+    <input type="text" name="query">
+    <h4> Return top K docs: </h4>
+    <input type="text" name="topk">
+    <h4> retrieval model: </h4>
+    BM25
+    <input type="checkbox" name="ret_model_bm25" value="BM25" checked>
+    LM
+    <input type="checkbox" name="ret_model_lm" value="LM">
+  </p>
+    <input type="submit">
+</form>
+</div>

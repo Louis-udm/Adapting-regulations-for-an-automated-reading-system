@@ -1,0 +1,11 @@
+<parameters>
+	<index>/data/rali8/Tmp/nieyifan/CRM/AMF_8.idx/</index>
+	<query>
+		<number>1</number>
+		<text>firm registration</text>
+	</query>
+	<count>50</count>
+	<runID>runName</runID>
+	<trecFormat>true</trecFormat>
+	<baseline>okapi,k1:1.2,b:0.75,k3:1000</baseline>
+</parameters>
