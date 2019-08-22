@@ -49,7 +49,10 @@ where indriparam.txt is a pre-defined indexing paramter file, an example is prov
 indri website has detailed usage: https://sourceforge.net/p/lemur/wiki/IndriBuildIndex%20Parameters/
 
 4. Classify scope of applicability for regulations:
-***train_scope_label.py*** is for this purpose. We use the rule match functions of [*spaCY*](https://spacy.io/api/matcher). If the child section doesn't match a scope role, it will inherit the role of the parent chapter. Just run *python train_scope_label.py* will produce the labeled documents and dump to *pickle* files.
+```
+python train_scope_label.py
+```
+We use the rule match functions of [*spaCY*](https://spacy.io/api/matcher). If the child section doesn't match a scope role, it will inherit the role of the parent chapter. Just run *python train_scope_label.py* will produce the labeled documents and dump to *pickle* files.
 
 5.  Run web service (the app/ folder contains the backend codes, and app/templates contains webpages)
 ```
