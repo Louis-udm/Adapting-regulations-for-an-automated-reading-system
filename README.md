@@ -23,4 +23,4 @@ https://www.finextra.com/pressarticle/70869/corlytics-helps-create-intelligent-r
 
 ## Guid
 ### Match the scope of applicability for regulations
-***train_scope_label.py*** is for this purpose. We use the rule match functions of [*spaCY*](https://spacy.io/api/matcher). If the child section doesn't match a scope role, it will inherit the role of the parent chapter. Just run $python train_scope_label.py$ will produce the labeled documents and dump to *pickle* files.
+***train_scope_label.py*** is for this purpose. We use the rule match functions of [*spaCY*](https://spacy.io/api/matcher). If the child section doesn't match a scope role, it will inherit the role of the parent chapter. Just run python train_scope_label.py will produce the labeled documents and dump to *pickle* files.
