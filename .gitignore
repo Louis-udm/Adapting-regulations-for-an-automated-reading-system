@@ -1,3 +1,10 @@
+# Special
+demo.py
+test*.py
+*.pkl
+Distribution de produits et services financiers/
+Atelier CRM/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
