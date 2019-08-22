@@ -1,8 +1,8 @@
 <parameters>
-    <index>/data/rali8/Tmp/nieyifan/CRM/AMF_10.idx</index>
+    <index>/data/CRM/AMF.idx</index>
     <memory>8G</memory>
     <corpus>
-      <path>/data/rali8/Tmp/nieyifan/CRM/docs_cat_10.trec</path>
+      <path>/data/CRM/docs.trec</path>
       <class>trectext</class>
     </corpus>
     <stemmer><name>krovetz</name></stemmer>
