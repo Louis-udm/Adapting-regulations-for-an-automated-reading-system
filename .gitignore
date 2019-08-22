@@ -2,6 +2,8 @@
 demo.py
 test*.py
 *.pkl
+*.docx
+*.html
 private_informations.txt
 Distribution de produits et services financiers/
 Atelier CRM/
