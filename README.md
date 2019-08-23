@@ -59,4 +59,4 @@ We use the rule match functions of [*spaCY*](https://spacy.io/api/matcher). If t
 export FLASK_APP=service.py
 flask run --port=8888 (or your desired port)
 ```
-6. Launch the website: in your browser type: localhost:8888/index and return
+6. Launch the website: in your browser type: localhost:8888/index and press return
