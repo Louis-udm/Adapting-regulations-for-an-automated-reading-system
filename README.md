@@ -26,6 +26,7 @@ https://www.finextra.com/pressarticle/70869/corlytics-helps-create-intelligent-r
 - python 3.x
 - spaCY 2.1
 - indri lemur 5.15
+- flask
 
 ### Usage
 
