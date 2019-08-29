@@ -54,6 +54,10 @@ indri website has detailed usage: https://sourceforge.net/p/lemur/wiki/IndriBuil
 python train_scope_label.py
 ```
 We use the rule match functions of [*spaCY*](https://spacy.io/api/matcher). If the child section doesn't match a scope role, it will inherit the role of the parent chapter. Just run *python train_scope_label.py* will produce the labeled documents and dump to *pickle* files.
+```
+python label_passages_pkl.py
+```
+*label_passages_pkl.py* is used to add role label to the passages.pkl 
 
 5.  Run web service (the app/ folder contains the backend codes, and app/templates contains webpages)
 ```
