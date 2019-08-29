@@ -57,7 +57,7 @@ We use the rule match functions of [*spaCY*](https://spacy.io/api/matcher). If t
 ```
 python label_passages_pkl.py
 ```
-*label_passages_pkl.py* is used to add role label to the passages.pkl 
+*label_passages_pkl.py* is used to add role label to the passages.pkl that produced by *extract_passages.py* . But this can't get the hierarchical roles because *extract_passages.py* output a flat structure.
 
 5.  Run web service (the app/ folder contains the backend codes, and app/templates contains webpages)
 ```
