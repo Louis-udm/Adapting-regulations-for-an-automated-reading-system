@@ -25,7 +25,7 @@ https://www.finextra.com/pressarticle/70869/corlytics-helps-create-intelligent-r
 ### Requirements
 - python 3.x
 - spaCY 2.1
-- indri lemur 5.15
+- indri lemur 5.3 (Compiled under Debian 9 Linux)
 - flask
 
 ### Usage
